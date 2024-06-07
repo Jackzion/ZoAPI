@@ -1,0 +1,56 @@
+package com.yupi.springbootinit.model.dto.userInterfaceInfo;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * 接口查询请求
+ */
+@Data
+public class UserInterfaceInfoQueryRequest implements Serializable {
+    /**
+     * 主键
+     */
+    private Long id;
+
+    /**
+     * 调用用户 id
+     */
+    private Long userId;
+
+    /**
+     * 接口 id
+     */
+    private Long interfaceInfoId;
+
+    /**
+     * 总调用次数
+     */
+    private Integer totalNum;
+
+    /**
+     * 剩余调用次数
+     */
+    private Integer leftNum;
+
+    /**
+     * 0-正常，1-禁用
+     */
+    private Integer status;
+
+    /**
+     * 第几页
+     */
+    private Integer current;
+
+    /**
+     * 页数
+     */
+    private Integer pageSize;
+
+
+    private static final long serialVersionUID = 1L;
+}

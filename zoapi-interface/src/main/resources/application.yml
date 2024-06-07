@@ -1,0 +1,10 @@
+
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+zoapi:
+  client:
+    access-key: ziio
+    secret-key: 12345
+
